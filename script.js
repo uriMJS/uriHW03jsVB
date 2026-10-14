@@ -1,6 +1,14 @@
 
+
+
 function generatePassword() {
-	return "fizzBin"; 
+	var pwlength = 6; 
+	var charArray = ["0123456789abcdefghij"];
+	var pwd = ""; 
+	for (let i = 1; i < 6; i++) {
+		pwd = pwd + "a"; 
+	}
+	return pwd; 
 }
 
 
