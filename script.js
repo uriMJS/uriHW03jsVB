@@ -31,10 +31,28 @@ function getPWLength() {
 	return pwLength; 
 }  // end getPWLength
 
+/* Get possible characters (lowercase, uppercase, digit, special chars) for password by asking user. */
+// Give user only so many tries. Avoids infinite loops but slightly tweaks project criteria 
 function getPossibleChars() {
-	charStrings = ["0123456789", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+	var done = false;
+	var maxTries = 4;
+	var tries = 0;  // tries so far
+	var charStrings = ["0123456789", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 
 		'!"#$' + "%&'()*+,-./:;<=>?@[\]^_`{|}~"]; 
-	nameStrings = ["numbers", "lower case letters", "upper case letters", "special characters"]; 
+	var nameStrings = ["numbers", "lower case letters", "upper case letters", "special characters"]; 
+	var charString = "";
+	while (!done) {
+		if (++tries > maxTries) {
+			alert("You have failed too many times. Using all types of characters.");
+			for (let i=0; i < charStrings.length; i++) {
+				charString += charStrings[i];
+			}
+			console.log("Full charString being returned is " + charString); 
+			charArray = charString.split(''); 
+			return charArray; 
+		} // end if tries > maxTries 
+	} // end while !done
+
 	var charArray = charStrings[0].split(''); 
 	return charArray; 
 }
