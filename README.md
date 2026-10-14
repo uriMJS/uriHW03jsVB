@@ -3,12 +3,16 @@ Javascript password generator - MJS 10.13.26
 
 ## Links
 Deployed HTML Link: "https://urimjs.github.io/uriHW03jsVB/"  
-Screenshot Link: ![Screenshot of app with debug values] (./assets/Screenshot03js.png)
+Screenshot Link: ![Screenshot of program with debug values](./assets/Screenshot03js.png)
 GitHub Repo Link: "https://github.com/uriMJS/uriHW03jsVB.git"
 
 ## Notes
 There is started code (index.html, style.css, script.js and a .png file) for this project.  
 Although the starter code is in a Develop subdirectory, I'm moving the files to root.
+The programming was pretty straight-forward, especially with the starter code attaching the handler.  
+For the screenshot link: This image seems to only show up in github.  
+For screenshot ![Text] is just explanatory text.   
+I note that my screenshot .png is actually from edge, not gitHub.io. 
 
 ## Acceptance Criteria
     Click the button to generate a password - presented with a series of prompts for password criteria  
