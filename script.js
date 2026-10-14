@@ -39,6 +39,7 @@ function getPossibleChars() {
 	var tries = 0;  // tries so far
 	var charStrings = ["0123456789", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 
 		'!"#$' + "%&'()*+,-./:;<=>?@[\]^_`{|}~"]; 
+	// nameStrings length must match charStrings => better to have an object here, but beyone project scope
 	var nameStrings = ["numbers", "lower case letters", "upper case letters", "special characters"]; 
 	var charString = "";
 	while (!done) {
@@ -46,14 +47,25 @@ function getPossibleChars() {
 			alert("You have failed too many times. Using all types of characters.");
 			for (let i=0; i < charStrings.length; i++) {
 				charString += charStrings[i];
-			}
+			} // end for
 			console.log("Full charString being returned is " + charString); 
 			charArray = charString.split(''); 
 			return charArray; 
 		} // end if tries > maxTries 
+		for (let j=0; j < charStrings.length; j++) {
+			if (confirm("Do you wish to include " + nameStrings[j] + " in your password?")) { 
+				charString += charStrings[j];
+				console.log("Added to charString ... " + charString);
+			} 
+		} // end for each type of character
+		if (charString.length === 0) {
+			alert("You must select at least 1 type of character (number, lower, upper or special). ");
+		} else {
+			done = true;
+		} 
 	} // end while !done
 
-	var charArray = charStrings[0].split(''); 
+	var charArray = charString.split(''); 
 	return charArray; 
 }
 
