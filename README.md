@@ -3,8 +3,8 @@ Javascript password generator - MJS 10.13.26
 
 ## Links
 Deployed HTML Link: "https://urimjs.github.io/uriHW03jsVB/"  
-Screenshot Link:   
-GitHub Repo Link: 
+Screenshot Link: ![Screenshot of app with debug values] (./assets/Screenshot03js.png)
+GitHub Repo Link: "https://github.com/uriMJS/uriHW03jsVB.git"
 
 ## Notes
 There is started code (index.html, style.css, script.js and a .png file) for this project.  
