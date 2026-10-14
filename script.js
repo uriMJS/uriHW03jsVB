@@ -43,15 +43,16 @@ function getPossibleChars() {
 	var nameStrings = ["numbers", "lower case letters", "upper case letters", "special characters"]; 
 	var charString = "";
 	while (!done) {
+		// Nice to have too many tries logic at top and separate from other logic
 		if (++tries > maxTries) {
 			alert("You have failed too many times. Using all types of characters.");
 			for (let i=0; i < charStrings.length; i++) {
 				charString += charStrings[i];
 			} // end for
 			console.log("Full charString being returned is " + charString); 
-			charArray = charString.split(''); 
-			return charArray; 
+			return charString.split(''); 
 		} // end if tries > maxTries 
+		// prompt user to ask if to include each type of character.
 		for (let j=0; j < charStrings.length; j++) {
 			if (confirm("Do you wish to include " + nameStrings[j] + " in your password?")) { 
 				charString += charStrings[j];
