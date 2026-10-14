@@ -2,9 +2,11 @@
 function getPWLength() {
 	/* MJS - get password length - up to 8 tries - else default of 8 returned */ 
 	/* Value must be 8 to 128 */ 
+	// We check isNaN(string) before using Number(string->Number conversion) before 
+	// checking if number is in range. Other ways exist to do this in one step. 
 	var pwLength = 8; 
 	var maxTries = 4;  // after maxTries we return default value 
-	var defLength = 10;  
+	var defLength = 10;  // default password length
 	var tries = 0; 
 	var done = false;
 	while (!done) {    // use while here - do ... while is do once, repeat while 
@@ -16,8 +18,8 @@ function getPWLength() {
 		let pwLengthString = prompt("Enter password length (8 to 128)"); 
 		if (isNaN(pwLengthString)) {
 			alert("You must enter a numeric string. "); 
-		} else {
-			pwLength = Number(pwLengthString); 
+		} else { 
+			pwLength = Math.floor(Number(pwLengthString));   // truncate reals such as 9.9
 			console.log("pwLength is " + pwLength); 
 			if (pwLength < 8 || pwLength > 128) {
 				alert("Length must be between 8 and 128");
