@@ -3,10 +3,12 @@
 
 function generatePassword() {
 	var pwlength = 6; 
-	var charArray = ["0123456789abcdefghij"];
+	var charString = "0123456789abcdefghij";
+	var charArray = charString.split('');
 	var pwd = ""; 
 	for (let i = 1; i < 6; i++) {
-		pwd = pwd + "a"; 
+		pwd = pwd + charArray[3]; 
+		console.log("charArray is " + charArray); 
 	}
 	return pwd; 
 }
