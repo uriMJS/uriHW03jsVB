@@ -1,15 +1,33 @@
 
 function getPWLength() {
-	var ans = prompt("EPW"); 
+	/* MJS - get password length - up to 8 tries - else default of 8 returned */ 
+	/* Value must be 8 to 128 */ 
 	var pwLength = 8; 
-	var maxTries = 8;  // after 8 failures we return 8
-	var pwLengthString = prompt("Enter password length (8 to 128)"); 
-	if (isNaN(pwLengthString)) {
-		prompt("Please enter a numeric string"); 
-	}
-		
-	return pwLength;
-}
+	var maxTries = 4;  // after maxTries we return default value 
+	var defLength = 10;  
+	var tries = 0; 
+	var done = false;
+	while (!done) {    // use while here - do ... while is do once, repeat while 
+		tries++; 
+		if (tries > maxTries) {
+			alert("You've exceeded " + maxTries + " tries. Returning default of " + defLength);
+			return defLength; 
+		}
+		let pwLengthString = prompt("Enter password length (8 to 128)"); 
+		if (isNaN(pwLengthString)) {
+			alert("You must enter a numeric string. "); 
+		} else {
+			pwLength = Number(pwLengthString); 
+			console.log("pwLength is " + pwLength); 
+			if (pwLength < 8 || pwLength > 128) {
+				alert("Length must be between 8 and 128");
+			} else { 
+				done = true; 
+			}
+		} // end if-else
+	} // end while !done	
+	return pwLength; 
+}  // end getPWLength
 
 function generatePassword() {
 	var pwlength = getPWLength(); 
