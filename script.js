@@ -5,9 +5,12 @@ function generatePassword() {
 	var pwlength = 6; 
 	var charString = "0123456789abcdefghij";
 	var charArray = charString.split('');
+	var possibleChars = charArray.length; 
 	var pwd = ""; 
-	for (let i = 1; i < 6; i++) {
-		pwd = pwd + charArray[3]; 
+	for (let i = 1; i <= pwlength; i++) {  // let has local scope 
+		let random = Math.floor(Math.random() * possibleChars); 
+		console.log("Random is " + random + " possibleChars " + possibleChars); 
+		pwd = pwd + charArray[random]; 
 		console.log("charArray is " + charArray); 
 	}
 	return pwd; 
