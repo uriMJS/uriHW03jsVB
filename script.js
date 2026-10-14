@@ -1,8 +1,18 @@
 
-
+function getPWLength() {
+	var ans = prompt("EPW"); 
+	var pwLength = 8; 
+	var maxTries = 8;  // after 8 failures we return 8
+	var pwLengthString = prompt("Enter password length (8 to 128)"); 
+	if (isNaN(pwLengthString)) {
+		prompt("Please enter a numeric string"); 
+	}
+		
+	return pwLength;
+}
 
 function generatePassword() {
-	var pwlength = 6; 
+	var pwlength = getPWLength(); 
 	var charString = "0123456789abcdefghij";
 	var charArray = charString.split('');
 	var possibleChars = charArray.length; 
