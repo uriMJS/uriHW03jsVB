@@ -1,9 +1,7 @@
 
 function getPWLength() {
-	/* MJS - get password length - up to 8 tries - else default of 8 returned */ 
+	/* MJS - get password length - up to 4 tries - else default length is returned */ 
 	/* Value must be 8 to 128 */ 
-	// We check isNaN(string) before using Number(string->Number conversion) before 
-	// checking if number is in range. Other ways exist to do this in one step. 
 	var pwLength = 8; 
 	var maxTries = 4;  // after maxTries we return default value 
 	var defLength = 10;  // default password length
@@ -16,10 +14,12 @@ function getPWLength() {
 			return defLength; 
 		}
 		let pwLengthString = prompt("Enter password length (8 to 128)"); 
+		// We check isNaN(string) before using Number(string->Number conversion) before 
+		// checking if number is in range. Other ways exist to do this in one step. 
 		if (isNaN(pwLengthString)) {
 			alert("You must enter a numeric string. "); 
 		} else { 
-			pwLength = Math.floor(Number(pwLengthString));   // truncate reals such as 9.9
+			pwLength = Math.floor(Number(pwLengthString));   // string->number and truncate reals such as 9.9
 			console.log("pwLength is " + pwLength); 
 			if (pwLength < 8 || pwLength > 128) {
 				alert("Length must be between 8 and 128");
@@ -31,10 +31,18 @@ function getPWLength() {
 	return pwLength; 
 }  // end getPWLength
 
+function getPossibleChars() {
+	charStrings = ["0123456789", "abcdefghijklmnopqrstuvwxyz", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", 
+		'!"#$' + "%&'()*+,-./:;<=>?@[\]^_`{|}~"]; 
+	nameStrings = ["numbers", "lower case letters", "upper case letters", "special characters"]; 
+	var charArray = charStrings[0].split(''); 
+	return charArray; 
+}
+
+
 function generatePassword() {
 	var pwlength = getPWLength(); 
-	var charString = "0123456789abcdefghij";
-	var charArray = charString.split('');
+	var charArray = getPossibleChars(); 
 	var possibleChars = charArray.length; 
 	var pwd = ""; 
 	for (let i = 1; i <= pwlength; i++) {  // let has local scope 
