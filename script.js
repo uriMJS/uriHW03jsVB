@@ -1,4 +1,10 @@
-// Assignment Code
+
+function generatePassword() {
+	return "fizzBin"; 
+}
+
+
+// Assignment Code -- Supplied to user below this line  
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
