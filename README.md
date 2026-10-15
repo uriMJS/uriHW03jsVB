@@ -33,5 +33,5 @@ Used much javascript, much of it common.
 	- if elseif ...   
 	- .split('') (string to characters)  
 	- Math.random, Math.floor  
-	- About <button> - onclick vs addEventListener   
+	- About button - onclick vs addEventListener   
 	- textArea.value (preferred over .innerHTML)    
