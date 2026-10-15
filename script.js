@@ -93,7 +93,8 @@ function about() {
 	// alert("Starting about function"); 
 	// getElementById faster than querySelector
 	let pwText = document.getElementById("password"); // dont need # here since always an Id
-	pwText.value = "Michael Sheliga's Password Generator";
+	// value (text only?) preferred over innerHTML for a text area.
+	pwText.value = "Michael Sheliga's Password Generator";  // value, innerHTML work, innerText no good here
 } // end function about 
 
 // Assignment Code -- Supplied to user below this line -------------------------  
