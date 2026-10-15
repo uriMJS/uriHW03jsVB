@@ -1,4 +1,4 @@
-
+/* Password Generator. MJS 10.15.26 */ 
 function getPWLength() {
 	/* MJS - get password length - up to 4 tries - else default length is returned */ 
 	/* Value must be 8 to 128 */ 
@@ -71,6 +71,9 @@ function getPossibleChars() {
 }
 
 
+/* Generate a password. Get password length, get characters allowed in password (digits, small, caps, specials)
+then use Math.random to choose a character and append to pwd.  
+Error checking in getPWLength and getPossibleChars. */ 
 function generatePassword() {
 	var pwlength = getPWLength(); 
 	var charArray = getPossibleChars(); 
@@ -83,19 +86,24 @@ function generatePassword() {
 		console.log("charArray is " + charArray); 
 	}
 	return pwd; 
-}
+} // end function generatePassword 
 
+// -------------- New Button Code below this line ------------------------------ 
+function about() {
+	// alert("Starting about function"); 
+	// getElementById faster than querySelector
+	let pwText = document.getElementById("password"); // dont need # here since always an Id
+	pwText.value = "Michael Sheliga's Password Generator";
+} // end function about 
 
-// Assignment Code -- Supplied to user below this line  
+// Assignment Code -- Supplied to user below this line -------------------------  
 var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
-
   passwordText.value = password;
-
 }
 
 // Add event listener to generate button

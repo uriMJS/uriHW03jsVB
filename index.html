@@ -24,8 +24,11 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
-        <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+		<div class="card-footer">
+		  <!-- Buttons inside card-footer show up inline-block --> 
+		  <button id="generate" class="btn">Generate Password</button>
+		  <!-- onClick is an alternative to addEventListener. Simplier but only one event handler allowed --> 
+		  <button id="about" class="btn" onClick="about()">About</button> 
         </div>
       </div>
     </div>
