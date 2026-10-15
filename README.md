@@ -27,11 +27,11 @@ Added a second button (about) in order to learn.
 ## Significant Features  
 This project was not too hard.  
 As usual, it turned out best to create a new repo, clone it, then use Windows to copy-paste all starter code.  
-Used much javascript, much of it common. 
-	- console.log
-	- for, while 
-	- if elseif ... 
-	- .split('') (string to characters)
-	- Math.random, Math.floor
-	- About <button> - onclick vs addEventListener  
-	- textArea.value (preferred over .innerHTML)  
+Used much javascript, much of it common.  
+	- console.log  
+	- for, while   
+	- if elseif ...   
+	- .split('') (string to characters)  
+	- Math.random, Math.floor  
+	- About <button> - onclick vs addEventListener   
+	- textArea.value (preferred over .innerHTML)    
