@@ -50,13 +50,13 @@ As usual, it turned out best to create a new repo, clone it, then use Windows to
   - Dash Space Text for list.  
      - 2-3 spaces per indent (not tab, not 4 arghhh)    
      - Must be on a new line. (Arghh)  
-  - Reset indentation with a blank line (Arghh)  
-
+  - Reset indentation with a blank line. Must have 2 spaces. (Arghh)  
+  
 **Just To Learn From**  
-    - Added a second button (about) in order to learn.   
-    - Used addEventListener and/or "onclick" to show an about box.  
+   - Added a second button (about) in order to learn.   
+   - Used addEventListener and/or "onclick" to show an about box.  
 
 **Tools (Aint nothing more important than your tools)**  
-    - Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
-    - Console tab helps to track down bugs.  
+   - Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
+   - Console tab helps to track down bugs.  
 	
