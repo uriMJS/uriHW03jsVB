@@ -19,11 +19,12 @@ This project was not too hard conceptually.
     
 **Markdown** (Really, Really Aggravating)   
   - Two not visible spaces at end of line, for a new line. (Arghh)  
-  - \*\*TwoAsteriks NoSpace TwoAsteriks for Bold  
+  - \*\*NoSpaceText\*\* for Bold  
   - Dash Space Text for list.  
      - 2-3 spaces per indent (not tab, not 4. markdownlang.com/basic/lists.html wrong. Arghhh)    
-     - Must be on a new line. (Arghh)  
-  - Reset indentation with a blank line. Dont need 2 spaces. (Arghh)  
+     - Must be on a new line. (With 2 spaces at end of prior line.) (Arghh)  
+  - Reset indentation with a blank line. Dont need 2 spaces. (Arghh) 
+  - Use \\\* to display an asterik    
   
 **Just To Learn From**  
    - Added a second button (about) in order to learn.   
