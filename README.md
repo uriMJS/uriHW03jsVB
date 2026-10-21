@@ -41,16 +41,19 @@ As usual, it turned out best to create a new repo, clone it, then use Windows to
   - .split('') (string to characters)  
   - Math.random, Math.floor  
   - About button - onclick vs addEventListener   
-  - textArea.value (preferred over .innerHTML)   
+  - textArea.value (preferred over .innerHTML)  
+    
 Markdown (Really Aggravating)   
     - Two not visible spaces at end of line, for a new line. (Arghh)  
     - /*/*NoSpace/*/* for Bold  
     - Dash<Space>Text for list.  
         - 2-4 spaces (not tab) per indent.   
         - Must be on a new line. (Arghh)  
+		
 **Just To Learn From**  
     - Added a second button (about) in order to learn.   
     - Used addEventListener and/or "onclick" to show an about box.  
+
 **Tools (Aint nothing more important than your tools)**    		
     - Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
     - Console tab helps to track down bugs.  
