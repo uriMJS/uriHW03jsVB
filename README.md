@@ -41,8 +41,8 @@ As usual, it turned out best to create a new repo, clone it, then use Windows to
   - .split('') (string to characters)  
   - Math.random, Math.floor  
   - About button - onclick vs addEventListener   
-  - textArea.value (preferred over .innerHTML)  
-**Markdown**  (Really Aggravating)   
+  - textArea.value (preferred over .innerHTML)   
+Markdown (Really Aggravating)   
     - Two not visible spaces at end of line, for a new line. (Arghh)  
     - /*/*NoSpace/*/* for Bold  
     - Dash<Space>Text for list.  
