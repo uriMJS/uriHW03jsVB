@@ -43,9 +43,9 @@ As usual, it turned out best to create a new repo, clone it, then use Windows to
   - About button - onclick vs addEventListener   
   - textArea.value (preferred over .innerHTML)  
     
-Markdown (Really Aggravating)   
-    - Two not visible spaces at end of line, for a new line. (Arghh)  
-    - /*/*NoSpace/*/* for Bold  
+**Markdown** (Really, Really Aggravating)   
+  - Two not visible spaces at end of line, for a new line. (Arghh)  
+   - TwoAsteriks NoSpace TwoAsteriks for Bold  
     - Dash<Space>Text for list.  
         - 2-4 spaces (not tab) per indent.   
         - Must be on a new line. (Arghh)  
