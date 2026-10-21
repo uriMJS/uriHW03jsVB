@@ -34,14 +34,14 @@ For the githubio (deployed page) link:
 ## Significant Features  
 This project was not too hard conceptually.  
 As usual, it turned out best to create a new repo, clone it, then use Windows to copy-paste all starter code.  
-**Javascript** Used much javascript, much of it common.  
-    - console.log  
-    - for, while   
-    - if elseif ...   
-    - .split('') (string to characters)  
-    - Math.random, Math.floor  
-    - About button - onclick vs addEventListener   
-    - textArea.value (preferred over .innerHTML)  
+**Javascript** Used lots of javascript, much of it common.  
+  - console.log  
+  - for, while     
+  - if elseif ...   
+  - .split('') (string to characters)  
+  - Math.random, Math.floor  
+  - About button - onclick vs addEventListener   
+  - textArea.value (preferred over .innerHTML)  
 **Markdown**  (Really Aggravating)   
     - Two not visible spaces at end of line, for a new line. (Arghh)  
     - /*/*NoSpace/*/* for Bold  
