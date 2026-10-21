@@ -12,10 +12,10 @@ Although the starter code is in a Develop subdirectory, I'm moving the files to 
 As usual, it seems easiest to start a new repo, clone it, then copy-past all starter code using Windows.   
 The programming was pretty straight-forward, especially with the starter code attaching the handler.  
 Screenshot Link: 
-	- This image seems to only show up in github. 
-	- For screenshot ![Text] is just explanatory text.  
+    - This image seems to only show up in github. 
+    - For screenshot ![Text] is just explanatory text.  
 For the githubio (deployed page) link:  
-	- Go to the Repo  
+- Go to the Repo  
 	- Click Settings (2nd Row of Icons at Top, Far Right)  
 	- Click Pages (Column of Icons at Left, 60% Down)  
 	- Should Display GitHub Pages Screen  
