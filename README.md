@@ -19,9 +19,9 @@ This project was not too hard conceptually.
     
 **Markdown** (Really, Really Aggravating)   
   - Two not visible spaces at end of line, for a new line. (Arghh)  
-  - TwoAsteriks NoSpace TwoAsteriks for Bold  
+  - \*\*TwoAsteriks NoSpace TwoAsteriks for Bold  
   - Dash Space Text for list.  
-     - 2-3 spaces per indent (not tab, not 4 arghhh)    
+     - 2-3 spaces per indent (not tab, not 4. markdownlang.com/basic/lists.html wrong. Arghhh)    
      - Must be on a new line. (Arghh)  
   - Reset indentation with a blank line. Dont need 2 spaces. (Arghh)  
   
