@@ -11,9 +11,17 @@ There is starter code (index.html, style.css, script.js and a .png file) for thi
 Although the starter code is in a Develop subdirectory, I'm moving the files to root.   
 As usual, it seems easiest to start a new repo, clone it, then copy-past all starter code using Windows.   
 The programming was pretty straight-forward, especially with the starter code attaching the handler.  
-For the screenshot link: This image seems to only show up in github.  
-For screenshot ![Text] is just explanatory text.   
-
+Screenshot Link: 
+	- This image seems to only show up in github. 
+	- For screenshot ![Text] is just explanatory text.  
+For the githubio (deployed page) link: 
+	- Go to the Repo
+	- Click Settings (2nd Row of Icons at Top, Far Right)
+	- Click Pages (Column of Icons at Left, 60% Down)
+	- Should Display GitHub Pages Screen
+	- Source: Deploy from a Branch (Middle of Scren)
+	- Branch: Main - Root (Just Below Source)
+ 
 ## Acceptance Criteria
     Click the button to generate a password - presented with a series of prompts for password criteria  
     prompted for password criteria - select which criteria to include in the password  
@@ -24,7 +32,7 @@ For screenshot ![Text] is just explanatory text.
     The password is generated - and is either displayed in an alert or written to the page.  
 	
 ## Significant Features  
-This project was not too hard.  
+This project was not too hard conceptually.  
 As usual, it turned out best to create a new repo, clone it, then use Windows to copy-paste all starter code.  
 Used much javascript, much of it common.  
 	- console.log  
@@ -34,5 +42,9 @@ Used much javascript, much of it common.
 	- Math.random, Math.floor  
 	- About button - onclick vs addEventListener   
 	- textArea.value (preferred over .innerHTML)    
-	- ** Just To Learn From **
-		- Added a second button (about) in order to learn.  
+** Just To Learn From **  
+		- Added a second button (about) in order to learn.   
+		- Used addEventListener and/or "onclick" to show an about box.  
+** Tools (Aint nothing more important than your tools) **  		
+		- Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
+		- Console tab helps to track down bugs.  
