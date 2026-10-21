@@ -13,7 +13,6 @@ As usual, it seems easiest to start a new repo, clone it, then copy-past all sta
 The programming was pretty straight-forward, especially with the starter code attaching the handler.  
 For the screenshot link: This image seems to only show up in github.  
 For screenshot ![Text] is just explanatory text.   
-Added a second button (about) in order to learn.  
 
 ## Acceptance Criteria
     Click the button to generate a password - presented with a series of prompts for password criteria  
@@ -35,3 +34,5 @@ Used much javascript, much of it common.
 	- Math.random, Math.floor  
 	- About button - onclick vs addEventListener   
 	- textArea.value (preferred over .innerHTML)    
+	- ** Just To Learn From **
+		- Added a second button (about) in order to learn.  
