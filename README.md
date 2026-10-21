@@ -6,6 +6,34 @@ Deployed HTML Link: "https://urimjs.github.io/uriHW03jsVB/"
 GitHub Repo Link: "https://github.com/uriMJS/uriHW03jsVB.git"   
 Screenshot Link: ![Screenshot of program with debug values](./assets/Screenshot03js.png)   
 
+## Significant Features  
+This project was not too hard conceptually.  
+**Javascript** Used lots of javascript, much of it common.  
+  - console.log  
+  - for, while     
+  - if elseif ...   
+  - .split('') (string to characters)  
+  - Math.random, Math.floor  
+  - About button - onclick vs addEventListener   
+  - textArea.value (preferred over .innerHTML)  
+    
+**Markdown** (Really, Really Aggravating)   
+  - Two not visible spaces at end of line, for a new line. (Arghh)  
+  - TwoAsteriks NoSpace TwoAsteriks for Bold  
+  - Dash Space Text for list.  
+     - 2-3 spaces per indent (not tab, not 4 arghhh)    
+     - Must be on a new line. (Arghh)  
+  - Reset indentation with a blank line. Dont need 2 spaces. (Arghh)  
+  
+**Just To Learn From**  
+   - Added a second button (about) in order to learn.   
+   - Used addEventListener and/or "onclick" to show an about box.  
+
+**Tools (Aint nothing more important than your tools)**  
+   - As usual, it turned out best to create a new repo, clone it, then use Windows to copy-paste all starter code.  
+   - Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
+   - Console tab helps to track down bugs.  
+
 ## Notes
 There is starter code (index.html, style.css, script.js and a .png file) for this project.   
 Although the starter code is in a Develop subdirectory, I'm moving the files to root.   
@@ -32,31 +60,4 @@ For the githubio (deployed page) link:
     All prompts are answered - a password is generated that matches the selected criteria  
     The password is generated - and is either displayed in an alert or written to the page.  
 	
-## Significant Features  
-This project was not too hard conceptually.  
-As usual, it turned out best to create a new repo, clone it, then use Windows to copy-paste all starter code.  
-**Javascript** Used lots of javascript, much of it common.  
-  - console.log  
-  - for, while     
-  - if elseif ...   
-  - .split('') (string to characters)  
-  - Math.random, Math.floor  
-  - About button - onclick vs addEventListener   
-  - textArea.value (preferred over .innerHTML)  
-    
-**Markdown** (Really, Really Aggravating)   
-  - Two not visible spaces at end of line, for a new line. (Arghh)  
-  - TwoAsteriks NoSpace TwoAsteriks for Bold  
-  - Dash Space Text for list.  
-     - 2-3 spaces per indent (not tab, not 4 arghhh)    
-     - Must be on a new line. (Arghh)  
-  - Reset indentation with a blank line. Must have 2 spaces. (Arghh)  
-  
-**Just To Learn From**  
-   - Added a second button (about) in order to learn.   
-   - Used addEventListener and/or "onclick" to show an about box.  
-
-**Tools (Aint nothing more important than your tools)**  
-   - Learned to Use CNTL-SHIFT-J to see web browser developer tool.  
-   - Console tab helps to track down bugs.  
 	
